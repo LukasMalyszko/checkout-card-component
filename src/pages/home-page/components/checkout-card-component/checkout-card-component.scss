@@ -1,0 +1,183 @@
+.checkout-card-component {
+  background-color: var(--on-surface);
+  margin: 50px 20px;
+  padding: 40px;
+  max-width: 520px;
+  width: 100%;
+  border-radius: var(--b-radius-24);
+
+  & &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  & &__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.03em;
+  }
+
+  & &__subtitle {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: var(--color-black-200);
+  }
+
+  & &__header-main {
+    display: flex;
+    padding: 40px 0 24px;
+    gap: 16px;
+  }
+
+  & &__logo-bg {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    border-radius: var(--b-radius-16);
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-white-500);
+  }
+
+  & &__nx-logo {
+    max-width: 22px;
+  }
+
+  & &__choosed-program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 78%;
+  }
+
+  & &__choosed-program-main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & &__choosed-program-type {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    padding-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  & &__choosed-program-number {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.01em;
+    color: var(--color-black-200);
+  }
+
+  .margin {
+    margin-top: -9px;
+  }
+
+  & &__amount {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: right;
+  }
+
+  .font-16 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  & &__payment-frequency {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: -0.01em;
+    color: var(--color-black-200);
+    margin-bottom: -4px;
+  }
+
+  & &__footer-border {
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-black-100);
+  }
+
+  & &__summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 0 48px;
+    gap: 24px;
+  }
+
+  & &__summary-details {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & &__summary-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: var(--color-black-200);
+  }
+
+  & &__summary-value {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    .total {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  & &__total-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+  }
+
+  @media (max-width: 530px) {
+    margin: 0;
+    padding: 40px 24px;
+    border-radius: 0;
+
+    & &__header {
+      padding-bottom: 258px;
+    }
+
+    & &__header-main {
+        padding: 48px 0 24px;
+    }
+  }
+
+  @media (max-width: 345px) {
+    padding: 40px 12px;
+
+    & &__logo-bg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  @media (max-width: 290px) {
+    & &__choosed-program-type {
+      max-width: 70px;
+    }
+  }
+}
