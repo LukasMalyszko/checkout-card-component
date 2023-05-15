@@ -1,19 +1,25 @@
 export const CheckoutCardComponent = () => {
+  const checkoutCardComponent = document.querySelector(
+    ".checkout-card-component"
+  );
 
- // Get the checkout card component
- const checkoutCardComponent = document.querySelector('.checkout-card-component')
+  const confirmButton = checkoutCardComponent.querySelector(".btn-primary");
 
- // Get the confirm button
- const confirmButton = checkoutCardComponent.querySelector('.btn-primary')
+  const cancelButton = checkoutCardComponent.querySelector(".btn-secondary");
 
- // Get the cancel button
- const cancelButton = checkoutCardComponent.querySelector('.btn-secondary')
+  let isLoading = false;
 
- // Add event listener to the confirm button
- confirmButton.addEventListener('click', () => {
-     // set the data-loading attribute to 1
-     // in order to change the buttons state to loading
-     confirmButton.setAttribute('data-loading', '1')
-     cancelButton.setAttribute('disabled', 'disabled')
- })
-}
+  // Add event listener to the confirm button
+  confirmButton.addEventListener("click", () => {
+    if (isLoading) {
+      console.log("The payment is already processing");
+      return null;
+    }
+    // set the data-loading attribute to 1
+    // in order to change the buttons state to loading
+    confirmButton.setAttribute("data-loading", "1");
+    cancelButton.setAttribute("disabled", true);
+
+    isLoading = true;
+  });
+};

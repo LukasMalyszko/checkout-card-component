@@ -1,69 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NX</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NX</title>
-</head>
-
-<body>
-  <div id="home-page">
-    <div class="checkout-card-component">
-      <div class="checkout-card-component__filling">
-        <div class="checkout-card-component__header">
-          <div class="checkout-card-component__top">
-            <div class="checkout-card-component__title">Order summary</div>
-            <div class="checkout-card-component__subtitle">Check if your order matches</div>
-          </div>
-          <div class="checkout-card-component__header-main">
-            <div class="checkout-card-component__logo-bg">
-              <div class="checkout-card-component__nx-logo">
-                <img src="/nx-logo.svg">
+  <body>
+    <div id="home-page">
+      <div class="checkout-card-component">
+        <div class="checkout-card-component__filling">
+          <div class="checkout-card-component__header">
+            <div class="checkout-card-component__top">
+              <div class="checkout-card-component__title">Order summary</div>
+              <div class="checkout-card-component__subtitle">
+                Check if your order matches
               </div>
             </div>
-            <div class="checkout-card-component__choosed-program">
-              <div class="checkout-card-component__choosed-program-main">
-                <div class="checkout-card-component__choosed-program-type">Individual</div>
-                <div class="checkout-card-component__summary-value margin">
-                  <div class="checkout-card-component__amount">$10.00</div>
-                  <div class="checkout-card-component__payment-frequency">/month</div>
+            <div class="checkout-card-component__header-main">
+              <div class="checkout-card-component__logo-bg">
+                <div class="checkout-card-component__nx-logo">
+                  <img src="/nx-logo.svg" />
                 </div>
               </div>
-              <div class="checkout-card-component__choosed-program-number">1 account</div>
-            </div>
-          </div>
-        </div>
-        <div class="checkout-card-component__footer">
-          <div class="checkout-card-component__footer-border"></div>
-          <div class="checkout-card-component__summary">
-            <div class="checkout-card-component__summary-details">
-              <div class="checkout-card-component__summary-text">Product summary:</div>
-              <div class="checkout-card-component__summary-value">
-                <div class="checkout-card-component__amount font-16">$10.00</div>
-                <div class="checkout-card-component__payment-frequency">/month</div>
-              </div>
-            </div>
-            <div class="checkout-card-component__summary-details">
-              <div class="checkout-card-component__total-text">Total:</div>
-              <div class="checkout-card-component__summary-value">
-                <div class="checkout-card-component__amount total">$10.00</div>
-                <div class="checkout-card-component__payment-frequency">/month</div>
+              <div class="checkout-card-component__choosed-program">
+                <div class="checkout-card-component__choosed-program-main">
+                  <div class="checkout-card-component__choosed-program-type">
+                    Individual
+                  </div>
+                  <div class="checkout-card-component__summary-value margin">
+                    <div class="checkout-card-component__amount">$10.00</div>
+                    <div class="checkout-card-component__payment-frequency">
+                      /month
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout-card-component__choosed-program-number">
+                  1 account
+                </div>
               </div>
             </div>
           </div>
-          <div class="checkout-card-component__buttons">
-            <button class="button-primary">Confirm and pay</button>
-            <button class="button-secondary">Cancel order</button>
+          <div class="checkout-card-component__footer">
+            <div class="checkout-card-component__footer-border"></div>
+            <div class="checkout-card-component__summary">
+              <div class="checkout-card-component__summary-details">
+                <div class="checkout-card-component__summary-text">
+                  Product summary:
+                </div>
+                <div class="checkout-card-component__summary-value">
+                  <div class="checkout-card-component__amount font-16">
+                    $10.00
+                  </div>
+                  <div class="checkout-card-component__payment-frequency">
+                    /month
+                  </div>
+                </div>
+              </div>
+              <div class="checkout-card-component__summary-details">
+                <div class="checkout-card-component__total-text">Total:</div>
+                <div class="checkout-card-component__summary-value">
+                  <div class="checkout-card-component__amount total">
+                    $10.00
+                  </div>
+                  <div class="checkout-card-component__payment-frequency">
+                    /month
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-card-component__buttons">
+              <button data-loading="0" class="btn-primary">
+                <div class="text">Confirm and pay</div>
+                <div class="loading">
+                  <img src="/Pulse-1.3s-200px.svg">
+                </div>
+              </button>
+              <button class="btn-secondary">Cancel order</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script type="module" src="/src/global-scripts/main.js"></script>
-  <script type="module" src="/src/pages/home-page/home-page.js"></script>
-</body>
-
+    <script type="module" src="/src/global-scripts/main.js"></script>
+    <script type="module" src="/src/pages/home-page/home-page.js"></script>
+  </body>
 </html>
