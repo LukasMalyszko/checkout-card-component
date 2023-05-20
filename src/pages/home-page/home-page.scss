@@ -6,8 +6,10 @@
 @use "./components/checkout-card-component/checkout-card-component.scss";
 @use "./components/checkout-card-component/checkout-card-component-buttons.scss";
 
-body {
+
+ html, body{
   background-color: var(--color-white-500);
+  height: 100%;
 }
 
 #home-page {

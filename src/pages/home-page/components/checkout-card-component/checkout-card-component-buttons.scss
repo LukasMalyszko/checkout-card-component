@@ -8,7 +8,6 @@
       display: flex;
       border: none;
       border-radius: 60px;
-    //   padding: 20px;
       justify-content: center;
       align-items: center;
       font-size: 16px;
@@ -18,8 +17,9 @@
       transition: 0.2s;
       cursor: pointer;
       height: 58px;
-      img {
-          max-width: 47px;
+
+      .loading {
+          max-width: 42px;
       }
     }
 
