@@ -5,6 +5,14 @@
   max-width: 520px;
   width: 100%;
   border-radius: var(--b-radius-24);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & &__header {
+    max-height: 400px;
+    overflow: auto;
+  }
 
   & &__top {
     display: flex;
@@ -152,9 +160,7 @@
   }
 
   @media (max-width: 530px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+   
     height: 100%;
     margin: 0;
     padding: 40px 24px;
